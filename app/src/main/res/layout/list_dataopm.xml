@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:background="@drawable/bg_wave">
+        <LinearLayout
+            android:id="@+id/ln_kiri"
+            android:background="#20A0E6"
+            android:layout_width="30dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="01"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ln_tengah"
+            android:layout_alignLeft="@+id/ln_kiri"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="40dp"
+            android:paddingLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_nsm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NSM Madrasah"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/tv_jenjang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jenjang Madrasah"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="gone"></TextView>
+
+            <TextView
+                android:id="@+id/tv_namamadrasah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Madrasah"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/tv_kecamatan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alamat Kecamatan Madrasah"
+                android:textColor="@color/teal_700"
+                android:visibility="gone"></TextView>
+
+            <TextView
+                android:id="@+id/tv_desa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alamat Desa Madrasah"
+                android:textColor="@color/teal_700"></TextView>
+
+            <TextView
+                android:id="@+id/tv_opmnama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama OPM Madrasah"
+                android:textColor="@color/purple_500"></TextView>
+
+            <TextView
+                android:id="@+id/tv_waopm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nomor WA OPM Madrasah"
+                android:textColor="@color/purple_500"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ln_kanan"
+            android:background="@color/teal_700"
+            android:layout_width="50dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center_horizontal"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/iv_pesan"
+                android:layout_marginTop="3dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_pesan">
+            </ImageView>
+            <ImageView
+                android:id="@+id/iv_edit"
+                android:layout_marginTop="3dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_edit">
+            </ImageView>
+            <ImageView
+                android:id="@+id/iv_telpon"
+                android:layout_marginTop="3dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_phone">
+            </ImageView>
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">OPM Simpatika</string>
+
+    <string name="OPMma">OPM Madrasah MA</string>
+    <string name="kodeiklan">ca-app-pub-3700600543118754~2025432189</string>
+    <string name="admobBanner">ca-app-pub-3700600543118754/1782723754</string>
+    <string name="ADSinterstitial">ca-app-pub-3700600543118754/7234360988</string>
+
+</resources>

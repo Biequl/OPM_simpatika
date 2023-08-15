@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AplikasiOPMSimpatika"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".activity.RegisterActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar.Bridge"
+            android:exported="false" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar.Bridge"
+            android:exported="false" />
+        <activity
+            android:name=".activity.mts.MTsBaruActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ra.OpmraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ra.TambahOpmra"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ra.EditOpmra"
+            android:exported="false" />
+        <activity
+            android:name=".activity.mi.OpmmiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.mi.TambahOpmmi"
+            android:exported="false" />
+        <activity
+            android:name=".activity.mi.EditOpmmi"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ma.OpmmaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ma.TambahopmMa"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ma.EditOpmma"
+            android:exported="false" />
+        <activity
+            android:name=".activity.mts.TambahopmMts"
+            android:exported="false" />
+        <activity
+            android:name=".activity.mts.EditOpmmts"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/kodeiklan" />
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+    </application>
+
+</manifest>
