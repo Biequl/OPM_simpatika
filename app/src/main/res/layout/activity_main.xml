@@ -56,12 +56,13 @@
                     android:textColor="@color/white"
                     android:textSize="26sp"
                     android:textStyle="bold" />
+
                 <TextView
                     android:id="@+id/etMainUsername"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:visibility="gone"
-                    android:text="Username" />
+                    android:text="Username"
+                    android:visibility="gone" />
 
             </LinearLayout>
 

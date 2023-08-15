@@ -18,15 +18,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AplikasiOPMSimpatika"
         tools:targetApi="31">
-
+        <activity
+            android:name=".activity.EditprofilActivity"
+            android:exported="false" />
         <activity
             android:name=".activity.RegisterActivity"
-            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar.Bridge"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar.Bridge" />
         <activity
             android:name=".activity.LoginActivity"
-            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar.Bridge"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar.Bridge" />
         <activity
             android:name=".activity.mts.MTsBaruActivity"
             android:exported="false" />

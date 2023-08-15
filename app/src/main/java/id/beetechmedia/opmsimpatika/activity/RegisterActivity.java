@@ -17,7 +17,11 @@ import id.beetechmedia.opmsimpatika.model.register.Register;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-
+/**
+ * Created by Sabiqul on 22/07/2023.
+ * BeeMedia
+ * sabiqul.ulum@gmail.com
+ */
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener {
     EditText etUsername, etPassword, etName;
     Button btnRegister;

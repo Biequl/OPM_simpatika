@@ -11,11 +11,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+import id.beetechmedia.opmsimpatika.activity.EditprofilActivity;
 import id.beetechmedia.opmsimpatika.activity.LoginActivity;
 import id.beetechmedia.opmsimpatika.activity.SessionManager;
 import id.beetechmedia.opmsimpatika.activity.ma.OpmmaActivity;
@@ -35,6 +37,7 @@ public class MainActivity2 extends AppCompatActivity {
     TextView textview_mail, textview_share, etUsername, etName;
     SessionManager sessionManager;
     String username, name;
+    ImageView profil;
     Boolean isOpen = false;
 
     CardView OpmRa, OpmMi, OpmMts, OpmMa;
@@ -52,6 +55,7 @@ public class MainActivity2 extends AppCompatActivity {
 
         etUsername = findViewById(R.id.etMainUsername);
         etName = findViewById(R.id.etMainName);
+        profil = findViewById(R.id.imageProfile);
 
         username = sessionManager.getUserDetail().get(SessionManager.USERNAME);
         name = sessionManager.getUserDetail().get(SessionManager.NAME);
@@ -95,6 +99,14 @@ public class MainActivity2 extends AppCompatActivity {
                     isOpen = true;
                 }
 
+            }
+        });
+
+        profil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(getApplicationContext(), EditprofilActivity.class);
+                startActivity(intent);
             }
         });
 
